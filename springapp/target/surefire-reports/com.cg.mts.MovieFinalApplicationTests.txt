@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: com.cg.mts.MovieFinalApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 3, Errors: 3, Skipped: 0, Time elapsed: 10.322 s <<< FAILURE! - in com.cg.mts.MovieFinalApplicationTests
+viewScreenList  Time elapsed: 0.374 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <404>
+	at com.cg.mts.MovieFinalApplicationTests.viewScreenList(ApplicationTests.java:175)
+
+viewMovie  Time elapsed: 0.044 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <404>
+	at com.cg.mts.MovieFinalApplicationTests.viewMovie(ApplicationTests.java:134)
+
+viewAllBookings  Time elapsed: 0.075 s  <<< ERROR!
+java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at com.cg.mts.MovieFinalApplicationTests.viewAllBookings(ApplicationTests.java:221)
+
+viewCustomerList  Time elapsed: 0.017 s  <<< ERROR!
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 0
+	at com.cg.mts.MovieFinalApplicationTests.viewCustomerList(ApplicationTests.java:55)
+
+deleteMoviesById  Time elapsed: 0.021 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <404>
+	at com.cg.mts.MovieFinalApplicationTests.deleteMoviesById(ApplicationTests.java:104)
+
+findTheatres  Time elapsed: 0.011 s  <<< ERROR!
+com.fasterxml.jackson.databind.exc.MismatchedInputException: 
+No content to map due to end-of-input
+ at [Source: (String)""; line: 1, column: 0]
+	at com.cg.mts.MovieFinalApplicationTests.findTheatres(ApplicationTests.java:82)
+
